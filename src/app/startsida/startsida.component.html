@@ -1,0 +1,15 @@
+
+<ul>
+  <li class="list" *ngFor="let artikel of artikelData">
+    <div class="card">
+      <h1>{{ artikel.title }}</h1>
+      <div class="container">
+        <p>{{ artikel.article }}</p>
+        <p><strong>Författare :  </strong>{{ artikel.author }}</p>
+        <p><strong>Uppskattad tid att läsa :  </strong>{{ artikel.time }} min</p>
+      </div>
+    </div>
+
+
+  </li>
+</ul>

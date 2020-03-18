@@ -1,0 +1,96 @@
+<h1>SKAPA NY ARTIKEL</h1>
+
+<div>
+	<form #ratingForm="ngForm">
+
+		<div class="form-group">
+
+			<label>Titel artikel</label>
+			<div class="form-row">
+				<input type="text"
+          required minlength="10"
+          touched
+          [(ngModel)]="model.title" name="title"
+          #title="ngModel" />
+				<div>
+					<div *ngIf="title.errors?.required" class="error-message">
+						Skriv in en titel
+          </div>
+          <div *ngIf="title.errors?.minlength" class="error-message">
+            Titeln måste bestå av minst 10 tecken
+          </div>
+				</div>
+			</div>
+    </div>
+
+    <div class="form-group">
+			<label for="">Författare (valfri)</label>
+			<input type="text"
+				[(ngModel)]="model.author" name="author"
+				#author="ngModel" />
+		</div>
+
+		<div class="form-group">
+			<label>Tidsuppskattning att läsa artikel i minuter</label>
+			<div class="form-row">
+				<input type="number"
+          required
+          touched
+          maxlength="2"
+					[(ngModel)]="model.time" name="time"
+          #time="ngModel"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
+				<div>
+					<div *ngIf="time.errors?.required" class="error-message">
+						Skriv in en tidsuppskattning för att läsa artikel i minuter
+					</div>
+				</div>
+
+			</div>
+    </div>
+
+
+
+		<div class="form-group">
+
+			<label>Artikel</label>
+			<div class="forms-row-textarea">
+        <textarea type="text" rows="4"
+        class="auto form-control" mdbInput
+          required
+          touched
+          minlength="10"
+          [(ngModel)]="model.article" name="article"
+          #article="ngModel" >
+      </textarea>
+
+      </div>
+      <div>
+        <div *ngIf="article.errors?.required" class="error-message">
+          Skriv din artikel, fält tomt
+        </div>
+        <div *ngIf="article.errors?.minlength" class="error-message">
+          Artikeln måste bestå av minst 10 tecken
+        </div>
+      </div><br />
+      <div class="btnAndLatest">
+      <button [disabled]="ratingForm.invalid" (click)="onAddArticle(); ratingForm.reset()" >Lägg till artikel</button>
+      <div class="latestAddText" *ngFor="let artikel of artikelData"><strong class="justGreen">&#10004;</strong> Du har lagt till artikel:  <strong class="justGreen">{{ artikel.title }} </strong></div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+		<br />
+		<!-- {{ diagnostic }} -->
+	</form>
+</div>
+
+
+

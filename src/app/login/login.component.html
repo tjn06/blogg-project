@@ -1,0 +1,11 @@
+<h2> Är det säkert att det är du som är bloggaren? </h2>
+
+
+  <button *ngIf="!(isLoggedIn | async)" (click)="bloggService.login()">
+    <a>Ja, det är jag</a>
+  </button>
+
+  <button *ngIf="(isLoggedIn | async)" (click)="bloggService.logout()">
+    <a>Nej, det är inte jag</a>
+  </button>
+

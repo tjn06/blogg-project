@@ -1,0 +1,8 @@
+<h1>ALLA ARTIKLAR</h1>
+
+<ul>
+  <li class="list" *ngFor="let artikel of artikelData">
+  <h2>{{ artikel.title }}
+  <button *ngIf="(isLoggedIn | async )" (click)="onDeleteArticle(artikel)">Ta bort</button></h2>
+  </li>
+</ul>

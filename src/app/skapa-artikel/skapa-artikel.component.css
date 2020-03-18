@@ -1,0 +1,72 @@
+/* @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'); */
+
+.form-group {
+ border: 1px solid #d1d1d1;
+	padding: 0.2em;
+	margin: 0.5rem;
+  background-color: #ffffff;
+  border-radius: 4px;
+
+}
+.error-message {
+	color: #ffffff;
+	background-color: #eb1736;
+	border-color: #7a444a;
+	border: 2px solid rgb(169, 153, 187);
+  padding: 0.2em;
+  margin-left: 0.2em
+}
+
+input, textarea {
+  border-left-width: 5px;
+  border: 3px;
+  display: block;
+  border-color: #7575dd;
+  border-style: solid;
+  margin-left: 0.2em;
+  padding: 0.2em;
+}
+
+.form-textarea {
+  margin-right: 0.2em;
+}
+
+label {display: block;}
+
+.form-row {
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 0em;
+}
+
+.forms-row-textarea {
+  display: grid;
+  grid-template-rows: 1fr;
+
+}
+
+input.ng-touched { border-left: 5px solid rgb(228, 190, 121); }
+
+.ng-valid[required], .ng-valid.required  {
+	border-left: 4px solid rgb(94, 192, 94);}
+
+input.ng-invalid {
+  border-left: 4px solid  #eb1736;}
+
+textarea.ng-invalid {
+  border-left: 4px solid #eb1736;}
+
+.btnAndLatest {
+  display: flex;
+}
+
+.latestAddText {
+  margin-left: 1em;
+}
+
+.justGreen {
+  color:rgb(94, 192, 94);
+}
+
+button[disabled] { background-color: #ddd; border-color: #ccc; }
+button[disabled]:hover { cursor: not-allowed; }

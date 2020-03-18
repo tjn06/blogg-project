@@ -1,0 +1,8 @@
+<h1>SENASTE ARTIKLAR</h1>
+
+<ul>
+  <li class="list" *ngFor="let artikel of artikelData">
+  <h2>{{ artikel.title }}</h2>
+  <p>{{artikel.article | slice:0:150}}<span *ngIf="artikel.article.length > 50">...</span>
+  </li>
+</ul>
