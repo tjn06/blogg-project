@@ -1,27 +1,23 @@
-# Blogg
+# Kodgranskning Hanna och Karins Blogg
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
+Gihub pages:
+https://ladylockheed.github.io/AngularBlogg/
+Repo:
+https://github.com/LadyLockheed/AngularBlogg.git
 
-## Development server
+Som vi ser det så är alla stories implementerade.
+Tycker att sidan är tydlig, snygg och lättanvänd.
+Det vi möjligtvis skulle vilja ändra på är footern som
+inte ligger i botten och åker upp och ner med innehållet.
+Även formuläret kunde påvisat för användaren att titeln är valfri.
+Samt att valideringen inte använder sig av grön och röda färger för att 
+påvisa för användaren om fälten är ok eller inte i valideringsformuläret.
+Ingår inte i kravspecifikationen att footern ska ligga
+i botten, så vi tycker att kravspecifikationen är uppfylld
+och kunden bör bli nöjd.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Ser att Hanna och Karin två servicar med tydliga namn vilket gör koden
+enklare att läsa till skillnad ifrån oss som lagt allt i en service.
+Variabelnamnen och funktionsnamnen är tydliga och lätta att förstå.
+Kan inte hitta några otydligheter i koden när det gäller val av namn.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
