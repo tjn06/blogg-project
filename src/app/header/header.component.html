@@ -1,11 +1,13 @@
 <div class="fixed-header">
   <div class="content-header">
+
   <nav>
-    <a routerLink="/startsida" routerLinkActive="active">Startsida</a>
-    <a routerLink="/alla-artiklar" routerLinkActive="active">Alla artiklar<span *ngIf="(isLoggedIn | async )">/Ta bort</span></a>
-    <a routerLink="/senaste-artiklar" routerLinkActive="active">Senaste artiklar</a>
-    <a *ngIf="(isLoggedIn | async )" routerLink="/skapa-artikel" routerLinkActive="active">Lägg till artikel</a>
-    <a routerLink="/login" routerLinkActive="active">Logga in</a>
+    <img src="assets/blog.png">
+    <a routerLink="/startsida" routerLinkActive="active"><h2>Startsida</h2></a>
+    <a routerLink="/alla-artiklar" routerLinkActive="active"><h2>Alla artiklar<span *ngIf="(isLoggedIn | async )">/Ta bort</span></h2></a>
+    <a routerLink="/senaste-artiklar" routerLinkActive="active"><h2>Senaste artiklar</h2></a>
+    <a *ngIf="(isLoggedIn | async )" routerLink="/skapa-artikel" routerLinkActive="active"><h2>Lägg till artikel</h2></a>
+    <a routerLink="/login" routerLinkActive="active"><h2>Logga in</h2></a>
   </nav>
   <div class="logged-in" *ngIf="(isLoggedIn | async )"> INLOGGAD</div>
   <div class="logged-out" *ngIf="!(isLoggedIn | async)"> UTLOGGAD</div>

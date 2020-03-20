@@ -2,7 +2,7 @@
 
 
 .router-outlet-css {
-	padding-top: 90px;
+	padding-top: 140px;
 	padding-bottom: 70px;
 	width: 80%;
   margin: 0 auto;
@@ -18,13 +18,15 @@
 }
 
 .fixed-footer{
+display: flex;
+justify-content: center;
   width: 100%;
   height: 3rem;
 	position: fixed;
 	background:#5252d4;
 	padding: 10px 0;
 	color: #fff;
-	bottom: 0
+	bottom: 0;
 }
 
 
